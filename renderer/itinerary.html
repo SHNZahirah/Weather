@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Create Itinerary</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3062/3062634.png" />
+</head>
+
+<body>
+  <!-- Tajuk page -->
+  <h1 id="title" style="color: #1e6091; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;">Planned Trip and Activites</h1> 
+  
+  <!-- Input tarikh utk itinerary -->
+  <label style="color: #1e6091; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-weight: 700; font-size: x-large;">Select Date :</label><br>
+  <input type="date" id="dateInput"><br>
+   <button id="next">Next</button><!-- button fetch weather -->
+   
+   <br> 
+
+  <div class="container">
+
+    <!-- Box untuk weather -->
+    <div class="box weatherBox">
+      <div class="weatherContent">
+        <div class="box weatherBox" style="color: #1e6091; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; ">
+          <h2>Weather Details</h2> 
+          <div id="weatherIcon"></div><!-- icon cuaca -->
+        <div id="weatherInfo"></div><!-- info cuaca -->
+      </div>
+      </div>
+    </div>
+  
+  
+
+   <!-- Box untuk cadangan aktiviti -->
+    <div class="box" id="recommendation">
+
+      <div class="innerBox">
+        <h2 style="color: #1e6091; text-align: center;">Recommendation<br>Activity</h2>    
+        <div id="recommendationContent"></div><!-- cadangan aktiviti based on weather -->
+        <textarea id="planInput" rows="4" placeholder="Write your trip plans or activity" style="display: none;"></textarea><br><br>
+        <br><br>
+        <button id="saveBtn" style="display: none; ">💾 Save</button><!-- save itinerary -->
+      </div>
+    </div>
+    </div><br></div>
+
+    <!-- Button kembali ke home -->
+    <button id="backHomeBtn">Back to Home</button><br>
+
+    <!-- Button utk view semua itineraries -->
+      <button id="viewItinerariesBtn" style="display: none;">View Itineraries</button>
+  <!-- Div untuk senarai itineraries -->
+      <div id="itineraryList" style="display: none;"></div>
+    </div>
+
+
+
+  <script src="itinerary.js"></script>
+</body>
+</html>

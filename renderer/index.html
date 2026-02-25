@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/1163/1163661.png" />
+</head>
+<body>
+
+
+<!--Header-->
+<div class="header">
+
+  <div class="title">
+    <img src="weather.gif" alt="Animated weather icon" class="icon" height="180" width="200" />
+    <div class="title-text">     
+    <h1>WEATHER FORECAST</h1> <!-- tajuk -->
+    <h3>analytics and decision support </h3>
+    </div>
+  </div>
+
+  <nav>
+  <a href="index.html">Home</a>
+  <a href="view.html">Plan Trip & Activities</a>
+  </nav>
+</div>
+
+<!--Input cari bandar-->
+<div class="input">
+  <input type="text" id="country" placeholder="Enter city" /><!-- textbox untuk user masukkan bandar -->
+</div>
+
+<!--Button cari bandar-->
+<button id="searchBtn">🔍 Search</button><br>
+
+<!--untuk paparan result weather lepas search-->
+<div id="result" style="display: none;"></div><br>
+
+<!--Button utk buka itinerary window -->
+<button id="itineraryBtn" style="display:none;">Plan your trip</button>
+
+<!--Div utk paparkan cuaca default Beranang -->
+<div id="klWeather"></div>
+
+  <script src="index.js"></script>
+</body>
+</html>
